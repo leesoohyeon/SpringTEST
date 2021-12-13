@@ -1,11 +1,9 @@
-package com.springbook.biz;
+package com.springbook.biz.board;
 
 import java.util.List;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-
-import com.springbook.biz.board.impl.BoardService;
 
 public class BoardServiceClient {
 
@@ -18,7 +16,7 @@ public class BoardServiceClient {
 		
 		//3. 글 등록 기능 테스트
 		BoardVO vo = new BoardVO();
-		vo.setTitle("임시제목");
+		vo.setTitle("임시제목"); 
 		vo.setWriter("홍길동");
 		vo.setContent("임시내용......");
 		boardService.insertBoard(vo);
